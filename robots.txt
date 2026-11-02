@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /404.html
+Disallow: /*.zip$
+Disallow: /*.pdf$
+
+Sitemap: https://percy-m-ri.github.io/st10476650-wede-part1/sitemap.xml

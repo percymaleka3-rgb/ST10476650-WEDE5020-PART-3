@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-ZA" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Order Enquiry &amp; Instant Cake Quote | Sweet Crumbs Bakery</title>
+    <meta name="description" content="Request a quote for cakes, cupcakes and pastries from Sweet Crumbs Bakery. Get an instant price estimate and check availability for collection or delivery in Pretoria.">
+    <meta name="keywords" content="cake quote Pretoria, order birthday cake, cupcake order, cake delivery Pretoria, bakery enquiry">
+    <meta name="author" content="Sweet Crumbs Bakery">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://percy-m-ri.github.io/st10476650-wede-part1/enquiry.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Sweet Crumbs Bakery">
+    <meta property="og:title" content="Order Enquiry &amp; Instant Cake Quote | Sweet Crumbs Bakery">
+    <meta property="og:description" content="Request a quote for cakes, cupcakes and pastries from Sweet Crumbs Bakery. Get an instant price estimate and check availability for collection or delivery in Pretoria.">
+    <meta property="og:url" content="https://percy-m-ri.github.io/st10476650-wede-part1/enquiry.html">
+    <meta property="og:image" content="https://percy-m-ri.github.io/st10476650-wede-part1/images/celebration-cake-800.jpg">
+    <meta name="theme-color" content="#FFF8F1">
+    <link rel="icon" type="image/png" href="images/favicon-32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <script src="js/boot.js?v=4"></script>
+    <script src="js/data.js?v=4" defer></script>
+    <script src="js/main.js?v=4" defer></script>
+    <script src="js/forms.js?v=4" defer></script>
+    <script src="js/enquiry.js?v=4" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Sweet Crumbs Bakery home">
+                <picture>
+                    <source type="image/webp" srcset="images/sweet-crumbs-logo-96.webp 1x, images/sweet-crumbs-logo-192.webp 2x">
+                    <img src="images/sweet-crumbs-logo-96.png" srcset="images/sweet-crumbs-logo-96.png 1x, images/sweet-crumbs-logo-192.png 2x" alt="Sweet Crumbs Bakery logo" width="48" height="48">
+                </picture>
+                <span>Sweet Crumbs</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><span></span><span></span></button>
+            <nav id="main-nav" class="main-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="testimonials.html">Reviews</a></li>
+                    <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title" class="reveal">Request an order quote</h1>
+                <p class="lead reveal delay-1">Tell us what you would like and when you need it. You will see an instant price estimate and whether we can bake it for your date.</p>
+            </div>
+        </section>
+
+        <section class="section-tight" aria-label="Enquiry form">
+            <div class="container form-layout">
+                <div class="form-card reveal">
+                    <h2>Your enquiry</h2>
+                    <p>Fields marked optional can be left blank. Everything else is required.</p>
+                    <form id="enquiry-form" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="fullName">Full name</label>
+                                <input type="text" id="fullName" name="fullName" autocomplete="name" required minlength="2" maxlength="60" aria-describedby="fullName-error">
+                                <p class="error-message" id="fullName-error" aria-live="polite"></p>
+                            </div>
+                            <div class="field">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required maxlength="100" aria-describedby="email-error">
+                                <p class="error-message" id="email-error" aria-live="polite"></p>
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" id="phone" name="phone" autocomplete="tel" required maxlength="16" placeholder="082 123 4567" aria-describedby="phone-error">
+                                <p class="error-message" id="phone-error" aria-live="polite"></p>
+                            </div>
+                            <div class="field">
+                                <label for="occasion">Occasion <span class="optional">(optional)</span></label>
+                                <select id="occasion" name="occasion" aria-describedby="occasion-error">
+                                    <option value="">Choose an occasion</option>
+                                    <option>Birthday</option>
+                                    <option>Wedding or anniversary</option>
+                                    <option>Baby shower</option>
+                                    <option>Corporate or office</option>
+                                    <option>Just because</option>
+                                </select>
+                                <p class="error-message" id="occasion-error" aria-live="polite"></p>
+                            </div>
+                            <div class="field full">
+                                <label for="product">Product</label>
+                                <select id="product" name="product" required aria-describedby="product-error">
+                                    <option value="">Choose a product</option>
+                                </select>
+                                <p class="error-message" id="product-error" aria-live="polite"></p>
+                            </div>
+                            <div class="field">
+                                <label for="quantity">Quantity</label>
+                                <input type="number" id="quantity" name="quantity" inputmode="numeric" min="1" max="100" step="1" required aria-describedby="quantity-error">
+                                <p class="error-message" id="quantity-error" aria-live="polite"></p>
+                            </div>
+                            <div class="field">
+                                <label for="date">Date needed</label>
+                                <input type="date" id="date" name="date" required aria-describedby="date-error">
+                                <p class="error-message" id="date-error" aria-live="polite"></p>
+                            </div>
+                            <fieldset class="field full">
+                                <legend>Collection or delivery</legend>
+                                <div class="segmented">
+                                    <label><input type="radio" name="fulfilment" value="collect" required aria-describedby="fulfilment-error" checked>Collect in store</label>
+                                    <label><input type="radio" name="fulfilment" value="delivery" aria-describedby="fulfilment-error">Deliver to me</label>
+                                </div>
+                                <p class="error-message" id="fulfilment-error" aria-live="polite"></p>
+                            </fieldset>
+                            <div class="field full conditional" id="collection-fields">
+                                <div>
+                                    <div class="field">
+                                        <label for="branch">Collection branch</label>
+                                        <select id="branch" name="branch" aria-describedby="branch-error">
+                                            <option value="">Choose a branch</option>
+                                            <option value="pretoria-central">Pretoria Central, 123 Pretorius Street</option>
+                                            <option value="hatfield">Hatfield, 45 Burnett Street</option>
+                                        </select>
+                                        <p class="error-message" id="branch-error" aria-live="polite"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field full conditional" id="delivery-fields">
+                                <div>
+                                    <div class="field">
+                                        <label for="address">Delivery address in Pretoria</label>
+                                        <input type="text" id="address" name="address" autocomplete="street-address" maxlength="160" placeholder="Street, suburb and postal code" aria-describedby="address-error">
+                                        <p class="error-message" id="address-error" aria-live="polite"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field full">
+                                <div class="field-row">
+                                    <label for="notes">Design ideas or notes <span class="optional">(optional)</span></label>
+                                    <span class="hint" id="notes-count">0 / 500</span>
+                                </div>
+                                <textarea id="notes" name="notes" maxlength="500" placeholder="Flavours, colours, message on the cake, allergies" aria-describedby="notes-error notes-count"></textarea>
+                                <p class="error-message" id="notes-error" aria-live="polite"></p>
+                            </div>
+                            <div class="field full">
+                                <label class="checkbox"><input type="checkbox" id="consent" name="consent" value="yes" required aria-describedby="consent-error">I agree that Sweet Crumbs Bakery may contact me about this enquiry. My details will not be shared with anyone else.</label>
+                                <p class="error-message" id="consent-error" aria-live="polite"></p>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn">Get my quote</button>
+                            <p class="form-status" role="status" aria-live="polite"></p>
+                        </div>
+                    </form>
+                    <div id="enquiry-result" class="result-panel" hidden aria-live="polite"></div>
+                </div>
+
+                <aside class="aside-stack" aria-label="Ordering information">
+                    <div class="card info-card reveal delay-1">
+                        <h3>How pricing works</h3>
+                        <ul>
+                            <li>Prices include VAT</li>
+                            <li>10% off orders of R1,000 or more</li>
+                            <li>Delivery in Pretoria costs R65</li>
+                            <li>Free delivery on orders over R500</li>
+                        </ul>
+                    </div>
+                    <div class="card info-card reveal delay-2">
+                        <h3>Lead times</h3>
+                        <ul>
+                            <li>Whole cakes: 3 days' notice</li>
+                            <li>Cupcakes, pastries and treats: 1 day</li>
+                            <li>More than 24 items: add 1 day</li>
+                            <li>We are closed on Sundays</li>
+                        </ul>
+                    </div>
+                    <div class="card info-card reveal delay-3">
+                        <h3>Prefer to talk?</h3>
+                        <p>Call us on <a href="tel:+27125554441">012 555 4441</a> or send a general message on our <a href="contact.html">contact page</a>.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a class="brand" href="index.html">
+                        <picture>
+                            <source type="image/webp" srcset="images/sweet-crumbs-logo-96.webp 1x, images/sweet-crumbs-logo-192.webp 2x">
+                            <img src="images/sweet-crumbs-logo-96.png" alt="" width="48" height="48" loading="lazy">
+                        </picture>
+                        <span>Sweet Crumbs Bakery</span>
+                    </a>
+                    <p>Baked with love, made for you. Fresh cakes, cupcakes and pastries in Pretoria.</p>
+                </div>
+                <div>
+                    <h2>Explore</h2>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="testimonials.html">Reviews</a></li>
+                        <li><a href="enquiry.html">Order enquiry</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Visit us</h2>
+                    <ul>
+                        <li>123 Pretorius Street, Pretoria Central</li>
+                        <li>45 Burnett Street, Hatfield</li>
+                        <li><a href="tel:+27125554441">012 555 4441</a></li>
+                        <li><a href="mailto:info@sweetcrumbs.co.za">info@sweetcrumbs.co.za</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Opening hours</h2>
+                    <ul>
+                        <li>Mon to Fri: 07:00 to 18:00</li>
+                        <li>Saturday: 08:00 to 15:00</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span data-year>2026</span> Sweet Crumbs Bakery. All rights reserved.</p>
+                <p>Share us:
+                    <a data-share="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpercy-m-ri.github.io%2Fst10476650-wede-part1%2F" target="_blank" rel="noopener noreferrer">Facebook</a> ·
+                    <a data-share="whatsapp" href="https://wa.me/?text=https%3A%2F%2Fpercy-m-ri.github.io%2Fst10476650-wede-part1%2F" target="_blank" rel="noopener noreferrer">WhatsApp</a> ·
+                    <a data-share="x" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpercy-m-ri.github.io%2Fst10476650-wede-part1%2F" target="_blank" rel="noopener noreferrer">X</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
